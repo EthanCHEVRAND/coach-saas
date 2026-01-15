@@ -1,0 +1,207 @@
+# Cahier des charges fonctionnel
+
+## Micro-SaaS de gestion sportive pour clubs indépendants
+
+---
+
+## 1. Présentation générale
+
+### 1.1 Contexte
+
+Les clubs sportifs indépendants (associations, structures privées, clubs amateurs) manquent d’outils simples et adaptés pour assurer un suivi structuré des entraînements et des pratiquants. Les coachs utilisent aujourd’hui des solutions hétérogènes (carnets, fichiers Excel, messageries privées), entraînant une perte d’information et un manque de continuité.
+
+### 1.2 Objectif du produit
+
+Développer une application web SaaS permettant aux clubs sportifs de **structurer, centraliser et historiser** le travail des coachs, sans complexité inutile.
+
+### 1.3 Vision produit
+
+> Offrir aux coachs une mémoire fiable et durable de leur pratique, de leurs séances et de leurs pratiquants.
+
+---
+
+## 2. Périmètre du projet
+
+### 2.1 Inclus dans la V1
+
+* Gestion des clubs
+* Gestion des coachs
+* Gestion des groupes
+* Gestion des pratiquants
+* Planification et historique des séances
+* Notes privées coach → pratiquant
+
+### 2.2 Hors périmètre (non inclus V1)
+
+* Messagerie instantanée
+* Réseau social
+* Application mobile native
+* Notes des pratiquants
+* Notifications push
+* Paiement côté pratiquant
+
+---
+
+## 3. Utilisateurs et rôles
+
+### 3.1 Rôles
+
+#### Administrateur de club
+
+* Crée et gère le club
+* Gère les coachs
+* Gère l’abonnement
+
+#### Coach
+
+* Gère ses groupes
+* Gère ses pratiquants
+* Crée et consulte des séances
+* Ajoute des notes individuelles
+
+#### Pratiquant (lecture seule – optionnel V1)
+
+* Accède à son groupe
+* Consulte les séances passées
+
+---
+
+## 4. Fonctionnalités détaillées
+
+### 4.1 Authentification et sécurité
+
+* Inscription par email
+* Connexion sécurisée
+* Rôles et permissions
+* Isolation stricte des données par club
+
+---
+
+### 4.2 Gestion des clubs
+
+* Création d’un club
+* Paramètres généraux : nom, sport, logo
+* Accès à la gestion de l’abonnement
+
+---
+
+### 4.3 Gestion des coachs
+
+* Invitation d’un coach par email
+* Attribution de rôles
+* Activation / désactivation d’un compte
+
+---
+
+### 4.4 Gestion des groupes
+
+* Création de groupes (nom, niveau, description)
+* Affectation d’un ou plusieurs coachs
+* Affectation de pratiquants
+
+---
+
+### 4.5 Gestion des pratiquants
+
+* Création d’une fiche pratiquant
+* Informations de base : nom, prénom, date de naissance (optionnelle)
+* Historique d’appartenance aux groupes
+
+---
+
+### 4.6 Notes coach → pratiquant
+
+* Notes privées visibles uniquement par les coachs
+* Notes horodatées
+* Association possible à une séance
+
+Objectif : suivi individualisé et mémoire long terme.
+
+---
+
+### 4.7 Gestion des séances
+
+#### Création de séance
+
+* Date
+* Groupe concerné
+* Objectifs
+* Contenu prévu
+
+#### Consultation
+
+* Liste des séances passées
+* Accès à l’historique par groupe
+
+---
+
+### 4.8 Historique
+
+* Historique global des séances
+* Historique individuel par pratiquant
+* Recherche simple (date, groupe)
+
+---
+
+## 5. Parcours utilisateurs (user journeys)
+
+### 5.1 Création d’un club
+
+1. Inscription
+2. Création du club
+3. Accès au tableau de bord
+
+### 5.2 Création d’une séance
+
+1. Sélection du groupe
+2. Création de la séance
+3. Ajout de contenu
+4. Enregistrement
+
+### 5.3 Suivi d’un pratiquant
+
+1. Accès à la fiche pratiquant
+2. Consultation de l’historique
+3. Ajout d’une note
+
+---
+
+## 6. Contraintes fonctionnelles
+
+* Interface simple et rapide
+* Temps d’accès aux actions clés < 3 clics
+* Utilisable sur tablette et mobile (responsive)
+* Données persistantes et sécurisées
+
+---
+
+## 7. Modèle économique
+
+* Abonnement mensuel par club
+* Paiement via Stripe
+* Essai gratuit limité dans le temps
+
+---
+
+## 8. Indicateurs de succès (V1)
+
+* Nombre de clubs actifs
+* Fréquence d’utilisation hebdomadaire
+* Rétention à 30 jours
+* Feedback qualitatif des coachs
+
+---
+
+## 9. Évolutions envisagées (post-V1)
+
+* Notes pratiquants
+* Notifications
+* Exports PDF
+* Application mobile
+* Statistiques avancées
+
+---
+
+## 10. Conclusion
+
+Ce cahier des charges définit une V1 volontairement recentrée, orientée valeur métier, permettant une adoption rapide par les clubs sportifs indépendants, tout en restant maintenable par un développeur solo.

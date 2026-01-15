@@ -1,0 +1,117 @@
+1️⃣ Écrans d’accès & onboarding (indispensables)
+1. Connexion
+Email
+Mot de passe
+Lien “mot de passe oublié”
+
+2. Inscription
+Email
+Mot de passe
+Nom du club (création auto)
+Sport (liste simple)
+
+2️⃣ Dashboard (écran central)
+3. Dashboard club
+
+Écran clé
+
+Contenu :
+résumé du club
+groupes du coach connecté
+prochaines séances (optionnel)
+
+accès rapide :
+groupes
+pratiquants
+séances
+
+
+3️⃣ Gestion des groupes
+4. Liste des groupes
+nom
+niveau
+coach(s)
+bouton “voir”
+
+5. Détail d’un groupe
+infos groupe
+liste des pratiquants
+historique des séances
+bouton “créer une séance”
+
+
+4️⃣ Gestion des pratiquants
+6. Liste des pratiquants
+nom
+groupe(s)
+recherche simple
+
+7. Fiche pratiquant
+
+Écran stratégique
+
+Contenu :
+infos générales
+groupes associés
+historique des séances
+notes coach → pratiquant
+bouton “ajouter une note”
+
+
+5️⃣ Gestion des séances
+8. Liste des séances
+filtre par groupe
+date
+statut (passée / future)
+
+9. Création / édition de séance
+date
+groupe
+objectifs
+contenu prévu
+
+
+10. Détail d’une séance
+infos séance
+contenu
+liens vers les pratiquants
+ajout rapide de notes individuelles (optionnel V1)
+
+6️⃣ Notes
+11. Ajout / édition de note
+texte libre
+association :
+pratiquant
+séance (optionnel)
+horodatage automatique
+
+Peut être une modal, pas forcément un écran plein.
+
+7️⃣ Administration club (minimum vital)
+12. Gestion des coachs
+liste des coachs
+invitation par email
+activation / désactivation
+
+13. Paramètres du club
+nom
+sport
+logo (optionnel)
+accès abonnement
+
+8️⃣ Abonnement & paiement
+14. Abonnement
+plan actuel
+statut
+bouton Stripe (checkout / portail)
+
+
+9️⃣ Écrans utilitaires (souvent oubliés)
+15. Erreur / accès refusé
+permissions insuffisantes
+lien retour
+
+16. Page “chargement / vide”
+pas encore de groupes
+pas encore de pratiquants
+
